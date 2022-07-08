@@ -1,0 +1,14 @@
+@import "mixin";
+@import "nullstyle";
+@import "fonts";
+@import "header";
+@import "ui";
+@import "footer";
+//*==================>
+
+body{
+	font-family: "Aller";
+font-weight: 400;
+color: #242424;
+position: relative;
+}

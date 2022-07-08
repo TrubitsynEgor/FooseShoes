@@ -1,0 +1,274 @@
+/*null*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+@font-face {
+  font-family: "Aller";
+  font-display: swap;
+  src: url("../fonts/Aller-Bold.woff") format("woff"), url("../fonts/Aller-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aller";
+  font-display: swap;
+  src: url("../fonts/Aller-Italic.woff") format("woff"), url("../fonts/Aller-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aller";
+  font-display: swap;
+  src: url("../fonts/Aller.woff") format("woff"), url("../fonts/Aller.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header__box-up,
+.header__box-down {
+  width: 950px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+}
+
+.header__up {
+  width: 100%;
+  height: 45px;
+  background-color: #242424;
+}
+
+.header__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__search-form {
+  display: none;
+}
+
+.header__search-btn {
+  background-color: #242424;
+}
+
+.header__log-form {
+  font-size: 11px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.header__log-form span {
+  text-transform: none;
+  color: #7e7e7e;
+  font-size: 11px;
+  line-height: 25px;
+}
+
+.log,
+.reg {
+  color: #7e7e7e;
+}
+
+.header__down {
+  background-color: #ffffff;
+  height: 60px;
+  width: 100%;
+}
+
+.header__box-down {
+  height: 60px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__link {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.025em;
+  padding: 17.5px 15px;
+  border-left: 1px solid rgba(211, 211, 211, 0.2);
+}
+
+.menu__link:last-child {
+  border-right: 1px solid rgba(211, 211, 211, 0.2);
+}
+
+.header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__coments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17.5px 23px 17.5px 23px;
+  border-left: 1px solid rgba(211, 211, 211, 0.2);
+  border-right: 1px solid rgba(211, 211, 211, 0.2);
+}
+
+.header__coments span {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #adadad;
+}
+
+.header__cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17.5px 23px 17.5px 23px;
+  border-right: 1px solid rgba(211, 211, 211, 0.2);
+}
+
+.header__cart span {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #57c5a0;
+}
+
+.header__info img {
+  margin: 0px 10px 0px 0px;
+}
+
+.ibg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.ibg img {
+  display: none;
+}
+
+body {
+  font-family: "Aller";
+  font-weight: 400;
+  color: #242424;
+  position: relative;
+}
