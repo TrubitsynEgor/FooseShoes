@@ -27,10 +27,27 @@ ibg();
 
 
 $(document).ready(function () {
-	$('.header__burger').click(function (event) {
-		$('.header__burger, .menu__list').toggleClass('active');
-		$('body').toggleClass('lock');
+	$('#go-to-1').click(function (event) {
+		$('.slider__nav-item_1').addClass('active');
+		$('.slider__nav-item_2,.slider__nav-item_3,.slider__nav-item_4,.slider__nav-item_5').removeClass('active');
 	})
+	$('#go-to-2').click(function (event) {
+		$('.slider__nav-item_2').addClass('active');
+		$('.slider__nav-item_1,.slider__nav-item_3,.slider__nav-item_4,.slider__nav-item_5').removeClass('active');
+	})
+	$('#go-to-3').click(function (event) {
+		$('.slider__nav-item_3').addClass('active');
+		$('.slider__nav-item_2,.slider__nav-item_1,.slider__nav-item_4,.slider__nav-item_5').removeClass('active');
+	})
+	$('#go-to-4').click(function (event) {
+		$('.slider__nav-item_4').addClass('active');
+		$('.slider__nav-item_2,.slider__nav-item_1,.slider__nav-item_3,.slider__nav-item_5').removeClass('active');
+	})
+	$('#go-to-5').click(function (event) {
+		$('.slider__nav-item_5').addClass('active');
+		$('.slider__nav-item_2,.slider__nav-item_1,.slider__nav-item_3,.slider__nav-item_4').removeClass('active');
+	})
+
 });
 
 
@@ -48,13 +65,27 @@ s.forEach(ss => {
 // s.addEventListener('mouseover', func1);
 
 
-var menu = ['Pink' + 'Shoes', 'AnnaField', 'Prada', 'Casadei', 'MellowYellow']
-var mySwiper = new Swiper('.swiper', {
-	// If we need pagination
-	scrollbar: {
-		el: '.swiper-scrollbar',
-		draggable: true,
-	},
 
-
+const mySwiper = new Swiper('.swiper', {
+	loop: true,
+	allowTouchMove: false
 })
+
+const sliderBtnOne = document.getElementById('go-to-1').addEventListener('click', () => {
+	mySwiper.slideTo(1);
+});
+const sliderBtnTwo = document.getElementById('go-to-2').addEventListener('click', () => {
+	mySwiper.slideTo(2);
+});
+const sliderBtnThree = document.getElementById('go-to-3').addEventListener('click', () => {
+	mySwiper.slideTo(3);
+});
+const sliderBtnFour = document.getElementById('go-to-4').addEventListener('click', () => {
+	mySwiper.slideTo(4);
+});
+const sliderBtnFive = document.getElementById('go-to-5').addEventListener('click', () => {
+	mySwiper.slideTo(5);
+});
+
+
+
