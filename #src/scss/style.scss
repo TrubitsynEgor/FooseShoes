@@ -201,3 +201,41 @@ margin: 0px 2px 0px 0px;
 	left: 50%;top: 50%;
 	transform: translate(-50%,-50%);
 }
+
+//==============> section __offers:
+.offers {
+	width: 100vw;
+height: 230px;
+background-color: #242424;
+}
+
+.offers__box {
+	height: 230px;
+	display: flex;
+	align-items: center;
+
+	justify-content: space-between;
+}
+.offers__card {
+	position: relative;
+}
+.offers__img {
+
+
+}
+.offers__text {
+	position: absolute;
+	left: 50%;top: 50%;
+font-size: 25px;
+line-height: 60px;
+text-transform: uppercase;
+
+width: 220px;
+height: 60px;
+background-color: rgba(36,36,36,0.8);
+text-align: center;
+transform: translate(-50%,-50%);
+}
+.offers__text a{
+	color: #ffffff;
+}
